@@ -1,0 +1,23 @@
+import profesionales.*
+
+test "primer test" {
+
+	const sanMartin = new Universidad(honorarioRecomendado = 3500, provincia="BsAs")
+	const rosario = new Universidad(honorarioRecomendado=2800, provincia="BsAs")
+	const corrientes = new Universidad(honorarioRecomendado=4200)
+	const hurlingham = new Universidad(honorarioRecomendado=8800)
+	
+	const juana = new ProfesionalVinculado(universidad=rosario)
+	const melina = new ProfesionalAsociado(universidad=corrientes)
+	const rocio = new ProfesionalLibre(universidad=hurlingham, honorarios=5000, provinciasDondeTrabaja=["Santa Fe", "Córdoba", "Buenos Aires"])
+	const luciana = new ProfesionalLibre(universidad=rosario, honorarios=3200, provinciasDondeTrabaja=["Santa Fe", "Entre Ríos"])
+	
+	
+
+	assert.that(true)
+
+}
+
+//describe agrupa tests con {}
+
+// initializa() fija valores fijos para todos los tests o usos de methods con {}
